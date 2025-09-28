@@ -131,7 +131,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 app.get('/', (req, res) => {
-  res.send('✅ Backend is running on Vercel');
+  res.send('Backend is running on Railway');
 });
 
 app.use('/api/auth', authRoutes);
