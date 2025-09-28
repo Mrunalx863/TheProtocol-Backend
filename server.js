@@ -108,7 +108,7 @@ app.use(cookieParser());
 
 const allowedOrigins = [
   'http://localhost:5173', // local frontend
-  process.env.FRONTEND_URL, // deployed frontend (Vercel)
+  process.env.FRONTEND_URL, // deployed frontend
 ].filter(Boolean); // removes undefined if env vars aren’t set
 console.log('Allowed origins:', allowedOrigins);
 //Normal CORS middleware
